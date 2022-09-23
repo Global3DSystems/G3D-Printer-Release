@@ -1,0 +1,5 @@
+version=2022.09.23
+theme=blue
+is_quickstart_finished=false
+network_mode=hotspot
+developer_mode=false
