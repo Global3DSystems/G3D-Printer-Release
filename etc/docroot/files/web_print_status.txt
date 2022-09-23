@@ -1,5 +1,5 @@
-name=...
-current-layer=...
-remaining-time=...
+name=T1500-CallHouse.g3d
+current-layer=1 / 274
+remaining-time=1 hr 27 min
 progress=0
-current_image_path=
+current_image_path=/files/mini_projection.png
