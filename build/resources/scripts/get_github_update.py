@@ -123,7 +123,7 @@ class MainWindow(QtWidgets.QMainWindow):
              
             current_folder = "G3D-Printer-Release-master/build/resources"
             current_update = os.path.join(home_dir, current_folder)
-            full_path = os.path.join(current_update, "g3d_rpi_programs.config")
+            full_path = os.path.join(current_update, "g3d_printer.txt")
 
             print("Getting current version from: {}".format(full_path))
 
