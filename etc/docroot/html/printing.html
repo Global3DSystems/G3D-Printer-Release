@@ -28,7 +28,7 @@
       </div>
   </div>
   <div class="row printing-box" style="float: right;">
-      <input type="button" class="btn shadow-none" data-toggle="modal" data-target="#pauseModal" value="PAUSE">
+      <input type="button" id="print-pause-btn-display" class="btn shadow-none" data-toggle="modal" data-target="#pauseModal" value="{pauseStatus}">
       <input type="button" class="btn shadow-none" data-toggle="modal" data-target="#abortModal" value="ABORT">
   </div>
 </div>
@@ -52,7 +52,7 @@
                   <input type="submit" class="btn shadow-none" method="post" id="print-pause-btn"
                       name="print-pause-btn" value="YES" onclick="pause_resume_clicked()">
                   <input type="button" class="btn shadow-none" name="cancel-pause-btn" value="NO"
-                      onclick="no_clicked()"">
+                      onclick="no_clicked()">
                  </form>
               </div>
            </div>

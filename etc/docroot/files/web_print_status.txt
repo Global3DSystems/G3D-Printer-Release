@@ -1,5 +1,5 @@
-name=T1500-CallHouse.g3d
-current-layer=1 / 274
-remaining-time=1 hr 27 min
-progress=0
+name=T1500-Shape-Box.g3d
+current-layer=32 / 292
+remaining-time=1 hr 20 min
+progress=10
 current_image_path=/files/mini_projection.png
