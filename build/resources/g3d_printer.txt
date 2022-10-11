@@ -1,4 +1,4 @@
-version=2022.10.04
+version=2022.10.11
 theme=blue
 is_quickstart_finished=false
 network_mode=hotspot
