@@ -274,9 +274,9 @@ class MainWindow(QtWidgets.QMainWindow):
 
             shutil.copytree(UPDATE_FOLDER_DIR, CURRENT_PROGRAM_DIR)
 
+            self.restore_to_default()
+            
             self.update_message_with_delay("Update finished! You need to restart\nthe printer to apply the full updates.\n\nPress Yes to restart the printer.")
-
-            self.upload_hex()
             
     def cloud_update_apply(self):
         self.message_label.resize(701, 320)
@@ -297,7 +297,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
         shutil.rmtree("/home/pi/Downloads/G3D-Printer-Release-master", ignore_errors = True)
 
-        self.upload_hex()
+        self.restore_to_default()
         
     def is_usb_update_present(self):
         """
@@ -396,10 +396,8 @@ class MainWindow(QtWidgets.QMainWindow):
                 
             subprocess.run(["python3", script_file])
 
-    def upload_hex(self):
-        pass
-        # TODO
-        #os.system("python3 home/pi/G3D-Printer/build/resources/scripts/upload_hex.py")    
+    def restore_to_default(self):
+        subprocess.run(["sudo", "python3", "/home/pi/G3D-Printer-Release-master/build/resources/scripts/reset.py"])
 
 if __name__ == "__main__":
 

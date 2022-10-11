@@ -9,7 +9,6 @@ import requests
 import glob
 import urllib.request
 import re
-
 from PyQt5 import QtWidgets, QtGui, QtCore
 from PyQt5.uic import loadUi
 
@@ -19,6 +18,7 @@ repo_url = "https://github.com/Global3DSystems/G3D-Printer-Release"
 repo_g3d_printer_config_url = "https://raw.githubusercontent.com/Global3DSystems/G3D-Printer-Release/master/build/resources/g3d_printer.txt"
 timeout_checking_update = 30 #30 seconds
 home_dir = "/home/pi/" 
+
 
 class MainWindow(QtWidgets.QMainWindow):
 
@@ -238,10 +238,13 @@ class MainWindow(QtWidgets.QMainWindow):
             self.repaint()
             return False
 
+        subprocess.run(["sudo", "python3", "/home/pi/G3D-Printer-Release-master/build/resources/scripts/reset.py"])
 
         self.message_label.setText("Download update success!\n\nInstallation will be on next boot\nPress continue/cancel to close this window.")
         self.repaint()
         self.update_success = True
+
+        
 
     def main(self):
 
