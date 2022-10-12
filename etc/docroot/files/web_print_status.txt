@@ -1,5 +1,5 @@
-name=T20007K-CallHouse.g3d
-current-layer=8 / 274
-remaining-time=1 hr 22 min
-progress=2
+name=T20008K-CallHouse.g3d
+current-layer=2 / 274
+remaining-time=1 hr 25 min
+progress=0
 current_image_path=/files/mini_projection.png
